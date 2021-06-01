@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root {
+    --black:#010005;
+    --purple:#6169b1;
+    --grey:#aaaaaa;
+    --grey1:#6b6b6b;
+    --bg:#f9f9f9;
+    --white:#fff;
+
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection {
+    background: var(--purple);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:var(--bg);
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+}
+
+.logo img{
+    width: 90px;
+    height: 90px;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    background: var(--black);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.95;
+    z-index: 1000;
+}
+
+header .navbar a{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 5rem;
+    color: var(--white);
+}
+
+header .navbar a:hover{
+    color:var(--purple)
+}
+
+.button{
+    position: sticky;
+    background-color: var(--purple);
+    border: none;
+    margin-left: 30px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+
+.button:hover{
+    background:#384094 ;
+}
+
+header label{
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--white);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.check{
+    display: none;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+}
+
+.home .content{
+    color: var(--white);
+}
+
+.home .image img{
+    width: 50vw;
+}
+
+.home .content h2{
+    font-size: 2.5rem;
+    color: var(--purple);
+    text-transform: uppercase;
+}
+
+.home .content h1{
+    font-size: 4.4rem;
+    text-transform: uppercase;
+}
+
+.home .content h3{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+
+.home .button{
+    margin-left: 0px;
+    margin-top: 40px;
+    
+}
+
+/*main content*/
+
+.main .left{
+    position: static;
+    height: 40%;
+    width: 40%;
+    margin-left: -380px;
+    margin-top: -240px ;
+}
+
+.main .how h1{
+    font-size: 4.4rem;
+}
+
+.main .how h1:before{
+    content:' ';
+    display:block;
+    border:2px solid black;
+}
+
+.main .how h1:before{
+    content: "";
+    display: block;
+    border: 2px solid var(--purple);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background:var(--purple);
+    width: 50px;
+}
+
+
+
+.main .how h3{
+    font-size: 2rem;
+    color: var(--grey1);
+}
+
+
+/*Footer*/
+
+
+footer{
+    position: static;
+    bottom: 0px;
+    padding: 0 7.5%;
+    width: 100%;
+    background: var(--black);
+}
+
+.content-footer{
+    display: flex;
+}
+
+.content-footer .text{
+    color: var(--white);
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+.content-footer h2 {
+    margin-top: 20px;
+    color: var(--white);
+}
+.content-footer p{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+i{
+    color: var(--white);
+}
+
+.content-footer .box{
+    flex-basis:50%;
+    padding: 10px 20px;
+}
+
+.box h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.box .cont-foot{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .cont-foot:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--grey)s;
+}
+
+.box .cont-foot:after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 15%;
+    background: var(--purple);
+    top: -10px;
+
+}
+
+.left .cont-foot p{
+    text-align: justify;
+}
+
+.center .cont-foot .fas{
+    font-size: 1.5rem;
+    background: var(--purple);
+    height: 45px;
+    width: 45px;
+    margin-top: 8px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: ease-in-out .4s;
+    cursor: pointer;
+}
+
+.center .cont-foot .fas:hover{
+    background:#384094 ;
+}
+
+.center .cont-foot .phone{
+    margin: 10px 0;
+}
+
+.right form .text{
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+    color: var(--white);
+}
+
+.right form .msg{
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.2rem;
+    background: var(--bg);
+    padding-left:10px ;
+    border: 1px solid #d8d8d8;
+}
+
+.right form textarea:focus{
+    outline-color: var(--purple);
+}
+
+.right form input{
+    height: 35px;
+}
+
+.right form .btn-foot{
+    margin-top: 10px;
+}
+
+.right form .btn-foot button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--white);
+    background: var(--purple);
+    font-size: 1.5rem;
+    font-weight: 600px;
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
+
+.right form .btn-foot button:hover{
+    background:#384094 ;
+}
+
+.bottom center{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+
+
+/* media queries */
+
+@media only screen and (max-width:768px){
+
+    .navbar{
+        padding: 0 9%;
+    }
+
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+        background: var(--black);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: ease-out .2s;
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        padding-left: 4% ;
+        color: var(--white);
+    }
+
+    .navbar .button{
+        margin-top: 30px;
+    }
+
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content:"\f00d";
+    }
+
+    .home{
+        flex-flow: column;
+        padding-left: 10%;
+    }
+
+    .home .image img{
+        width: 350px;
+    }
+
+    .home .content{
+        margin-top: 150px;
+    }
+
+    .home .content h2{
+        font-size: 1.5rem;
+    }
+
+    .home .content h1{
+        font-size: 3rem;
+    }
+
+    .home .content h3{
+        font-size: 1.3rem;
+    }
+
+    .main .left{
+        margin-left: -160px;
+        margin-top: -150px;
+        height: 50%;
+        width: 50%;
+    }
+
+    .main .how h1{
+        font-size: 3rem;
+        margin-left: 8%;
+        margin-top: 40px;
+    }
+
+    .main .how h3{
+        font-size: 1.5rem;
+        margin-left: 8%;
+    }
+    
+
+    .content-footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+ 
+    .content-footer .box{
+        margin: 5px 0;
+    }
+}
+@media only screen and (max-width:991px){
+
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+        background: var(--black);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: ease-in-out .2s;
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        padding-left: 6% ;
+        color: var(--white);
+        
+    }
+
+    .navbar .button{
+        margin-top: 30px;
+    }
+    
+    .home{
+        padding-left: 10%;
+    }
+    
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content:"\f00d";
+    }
+
+    section{
+        padding: 0 3%;
+    }
+
+    .main .how h1{
+        margin-left: 8%;
+        margin-top: 40px;
+    }
+
+    .main .how h3{
+        margin-left: 8%;
+    }
+
+    .main .left{
+        margin-left: -150px;
+        margin-top: -140px;
+    }
+
+    .content-footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+ 
+    .content-footer .box{
+        margin: 5px 0;
+    }
+
+}
+
+@media screen and (min-width:980px){
+
+   header .navbar a{
+       font-size: 1.4rem;
+       margin: 1rem;
+   }
+
+
+}
