@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <!-- Css file -->
     <link rel="stylesheet" href="main.css">
+    <link rel="javascript" href="main.js">
 
     <title>Safe-Seat</title>
 </head>
@@ -57,8 +58,49 @@
         <h1>How it works</h1><br>
         <h3>Safe-seat.dk is designed to meet public and business<br> demands for a safer and more hygienic environment.</h3>
     </div>
+    <div class="container">
+        <input type="checkbox" id="click">
+        <label for="click" class="click-me">Learn more</label>
+        <div class="content1">
+            <div class="header">
+                <h2>Safe-seat</h2>
+                <label for="click" class="fas fa-times"></label>
+            </div>
+            <label for="click" class="fas fa-check"></label>
+            <p>Safe-seat is here to improve the public sector and the service industry.
+                We want to decrease the usage of paper and help the businesses be more environmently friendly
+                and to give people better sanitized public toilets.
+            </p>
+            <div class="line"></div>
+            <label for="click" class="close-btn">Close</label>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slide active">
+            <img src="/img/before.jpg" alt="">
+            <div class="info">
+                <h2>Before using Safe-Seat</h2>
+                <p>The day to day using of public toilets come with a lot of issues. Safe-seat is here to change it.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="/img/after.jpg" alt="">
+            <div class="info">
+                <h2>After using Safe-Seat</h2>
+                <p>Safe-seat means clear public toilets and steril environment.</p>
+            </div>
+        </div>
+        <div class="navig">
+            <i class="fas fa-chevron-left prev-btn"></i>
+            <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="navig-visibility">
+            <div class="slide-icon active"></div>
+            <div class="slide-icon"></div>
+        </div>
+    </div>
     <img src="/img/wav.svg" class="left">
-    
 </section>
 
     <!--How section ends-->
@@ -122,5 +164,9 @@
     </div>
 </footer>
     <!--Footer ends-->
+
+<script src="main.js"></script>
+
+
 </body>
 </html>
